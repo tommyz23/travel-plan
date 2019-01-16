@@ -2,8 +2,8 @@ package com.example.dao.Impl;
 
 import com.example.dao.UserDao;
 import com.example.entity.User;
-import com.example.utils.RespCode;
-import com.example.utils.RespEntity;
+import com.example.utils.response.RespCode;
+import com.example.utils.response.RespEntity;
 import com.example.utils.RowMapper.UserRowMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;

@@ -1,6 +1,6 @@
 package com.example.dao;
 
-import com.example.utils.RespEntity;
+import com.example.utils.response.RespEntity;
 import org.springframework.stereotype.Component;
 
 @Component

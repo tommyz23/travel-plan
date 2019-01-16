@@ -2,7 +2,7 @@ package com.example.controller;
 
 
 import com.example.service.UserService;
-import com.example.utils.RespEntity;
+import com.example.utils.response.RespEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,5 +23,10 @@ public class UserController {
         String phoneNumber = request.getParameter("phoneNumber");
         String password = request.getParameter("password");
         return userService.checkLogin(phoneNumber, password);
+    }
+
+    @RequestMapping("/signUp")
+    public RespEntity signUp(HttpServletRequest request){
+        return null;
     }
 }

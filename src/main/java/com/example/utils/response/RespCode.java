@@ -1,4 +1,4 @@
-package com.example.utils;
+package com.example.utils.response;
 
 public enum RespCode {
     SUCCESS(0, "请求成功"),
