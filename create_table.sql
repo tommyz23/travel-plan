@@ -28,10 +28,13 @@ create table comment
 -- ’’∆¨±Ì
 create table photo
 (
+	PHOTO_id int auto_increment
+		primary key,
 	PLAN_ID int not null,
 	UPLOADER_ID int not null,
 	PHOTO_PATH varchar(50) null,
-	primary key (PLAN_ID, UPLOADER_ID),
+	constraint photo_plan__fk
+		foreign key (PLAN_ID) references homework_nju.plan (id),
 	constraint photo_user__fk
 		foreign key (UPLOADER_ID) references homework_nju.user (id)
 )
