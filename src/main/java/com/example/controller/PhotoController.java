@@ -1,7 +1,6 @@
 package com.example.controller;
 
 import com.example.service.PhotoService;
-import com.example.utils.FileUtils.FileHelper;
 import com.example.utils.response.RespCode;
 import com.example.utils.response.RespEntity;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,7 +43,7 @@ public class PhotoController {
 
     @RequestMapping("/upload")
     public RespEntity add(HttpServletRequest request, @RequestParam("file")MultipartFile file){
-        String fileName = request.getParameter("fileName");
+        String fileName = file.getOriginalFilename();
         String planId_s = request.getParameter("planId");
         String uploaderId_s = request.getParameter("uploaderId");
         if (planId_s == null || uploaderId_s == null)

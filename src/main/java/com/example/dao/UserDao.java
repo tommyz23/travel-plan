@@ -6,4 +6,5 @@ import org.springframework.stereotype.Component;
 @Component
 public interface UserDao {
     RespEntity checkLogin(String phone_number, String password);
+    boolean setScore(Double score, int id);
 }

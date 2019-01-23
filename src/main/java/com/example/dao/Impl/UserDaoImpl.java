@@ -35,4 +35,18 @@ public class UserDaoImpl implements UserDao {
             return new RespEntity(RespCode.WARN);
         }
     }
+
+    @Override
+    public boolean setScore(Double score, int id) {
+        String sql = "UPDATE USER SET SCORE=? WHERE ID=?";
+        int update;
+        try {
+            update = jdbcTemplate.update(sql, score, id);
+            if (update == 0)
+                return false;
+            return true;
+        }catch (DataAccessException e){
+            return false;
+        }
+    }
 }
