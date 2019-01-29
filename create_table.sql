@@ -12,6 +12,17 @@ create table user
 )
 ;
 
+-- 计划表
+create table plan
+(
+	ID int auto_increment
+		primary key,
+	time date null,
+	SITE varchar(50) not null,
+	PEOPLE_NUMBER int default '1' null
+)
+;
+
 -- 评论表
 create table comment
 (
@@ -41,16 +52,9 @@ create table photo
 )
 ;
 
--- 计划表
-create table plan
-(
-	ID int auto_increment
-		primary key,
-	time date null,
-	SITE varchar(50) not null,
-	PEOPLE_NUMBER int default '1' null
-)
-;
+
+
+
 
 
 -- 计划-用户表
