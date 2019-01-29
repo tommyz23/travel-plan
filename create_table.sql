@@ -1,3 +1,4 @@
+--数据库名：homework_nju
 -- 用户表
 create table user
 (
