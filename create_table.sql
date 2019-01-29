@@ -1,3 +1,4 @@
+--数据库名：homework_nju
 -- 用户表
 create table user
 (
@@ -8,6 +9,17 @@ create table user
 	SCORE int default '0' null,
 	PHONE_NUMBER varchar(20) null,
 	REAL_NAME varchar(40) null
+)
+;
+
+-- 计划表
+create table plan
+(
+	ID int auto_increment
+		primary key,
+	time date null,
+	SITE varchar(50) not null,
+	PEOPLE_NUMBER int default '1' null
 )
 ;
 
@@ -40,16 +52,9 @@ create table photo
 )
 ;
 
--- 计划表
-create table plan
-(
-	ID int auto_increment
-		primary key,
-	time date null,
-	SITE varchar(50) not null,
-	PEOPLE_NUMBER int default '1' null
-)
-;
+
+
+
 
 
 -- 计划-用户表
