@@ -10,7 +10,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class FileHelper {
-    private static String FILEPATH = "F:\\homework_photo\\";
+    private static String FILEPATH = "C:\\homework_photo\\";
     public static String upload(MultipartFile file, String name, String planId, String uploaderId){
         File folderFile = new File(FILEPATH + planId + "\\" + uploaderId);
         if (!folderFile.exists())

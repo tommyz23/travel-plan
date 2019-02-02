@@ -15,6 +15,7 @@ public class PlanRowMapper implements RowMapper<Plan> {
         plan.setPeopleNumber(resultSet.getInt("people_number"));
         plan.setSite(resultSet.getString("site"));
         plan.setTime(resultSet.getDate("time"));
+        plan.setDetail(resultSet.getString("detail"));
         return plan;
     }
 }

@@ -9,6 +9,7 @@ public enum RespCode {
     private String msg;
 
     RespCode(int code, String msg) {
+        this.code = code;
         this.msg = msg;
     }
 

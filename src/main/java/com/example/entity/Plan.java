@@ -8,6 +8,7 @@ public class Plan {
     private Date time;
     private int peopleNumber;
     private String name;
+    private String detail;
 
     public String getName() {
         return name;
@@ -47,5 +48,13 @@ public class Plan {
 
     public void setPeopleNumber(int peopleNumber) {
         this.peopleNumber = peopleNumber;
+    }
+
+    public String getDetail() {
+        return detail;
+    }
+
+    public void setDetail(String detail) {
+        this.detail = detail;
     }
 }
